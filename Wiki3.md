@@ -3,12 +3,42 @@
 ## <div align = "center"> Introduction </div>
 
 ## <div align = "center"> Data Types [Kelvin] </div>
+&nbsp; &nbsp; &nbsp; &nbsp; Data types in C++, like in any other programming language, are essential for defining the kind of data that variables can store and manipulate. They specify the amount of memory to allocate for a variable and the operations that is allowed on the data. C++ includes several built-in types, categorized mainly into primitive and derived types.
+
+### <div align = "center"> Primitive Data Types </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp; Primitive Data Types are the basic building blocks of a programming language. They are predefined by the language and represent simple values. They are fixed in size and are directly supported by the underlying hardware. Integer is a primitive data type, which can be represented as ‘int’, ‘short’, ‘long’, ‘long long’, depending on if it is known how big/small the number is. Ideally you want to pick the best fit with the least amount of unused bits in memory to minimize any waste of resources. The same principle follows with Floating-Point Types. Another example would be Character, a type used for single characters to store ASCII values.
+
+### <div align = "center"> Derived Data Types </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp; Derived Data Types are constructed from primitive data types and allow more complex data structures and abstractions. Our first example will be Arrays, a collection of elements of the same data type that can be accessed via indices. Essentially, arrays facilitate handling multiple related data items as one and they require contiguous memory allocation. Another derived data type would be Pointers, variables that store memory addresses. They are crucial for dynamic memory allocation and the fundamental pieces to complex data structures like Linked Lists & Trees.
+
+<br/>
+Understanding C++ data types is crucial for efficient memory usage and error-free programming. Choosing the appropriate data type ensures optimal performance and resource management in software applications.
 
 ## <div align = "center"> Expressions [Ken] </div>
 
 ## <div align = "center"> Assignment Statements [Ken] </div>
 
 ## <div align = "center"> Statement-Level Control Structures [Kelvin] </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp; Statement-Level Control Structures in C++ are vital for directing the flow of program execution. They allow for conditional operations, repeated execution, and branching, making programs more dynamic and responsive.
+
+### <div align = "center"> Conditional Statements </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp; Conditional statements, include “if-else if/else” statements which execute code blocks based on Boolean expressions. They are effectively enabling decision-making processes within programs. Another conditional would be a “switch”. A switch statement selects one out of all the code blocks to execute, based on the value of an expression. It is efficient for handling multiple conditions.
+
+### <div align = "center"> Looping Constructs </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp; Looping constructs enable repeated execution of code blocks. An example, the “for Loop” is ideal for scenarios where the number of iterations is known beforehand. Another example, the “while Loop” repeats a block of code as long as the specified condition remains true, which is useful when the number of iterations is not known beforehand.
+
+### <div align = "center"> Jump Statements </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp; Jump statements alter the normal flow of control. The “break” statement exits a loop or “switch” statement prematurely. The “continue” statement skips the current iteration of a loop and proceeds with the next. The “goto” statement transfers control to a labeled statement, though its use is generally discouraged due to readability concerns.
+
+<br/>
+Mastering control structures is essential for implementing logic and creating flexible, robust programs. They allow programmers to handle various scenarios and conditions, ensuring the program behaves as expected under different circumstances.
+
 
 ## <div align = "center"> Subprograms [Jackson] </div>
 
@@ -29,14 +59,6 @@
         }
 
 
-
-
-### <div align = "center"> Dynamic Binding  </div>
-
-
-    
-        
-    
 
 ## <p align = "center"> Exception Handling and Event Handling [Jackson]</p>
 
