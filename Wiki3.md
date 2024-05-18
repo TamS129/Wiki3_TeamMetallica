@@ -30,12 +30,13 @@
 
 
 
-### <div align = "center">   </div>
+
+### <div align = "center"> Dynamic Binding  </div>
+
 
     
         
     
-This line of text is not indented. It ends the code block and starts a new paragraph.
 
 ## <p align = "center"> Exception Handling and Event Handling [Jackson]</p>
 
