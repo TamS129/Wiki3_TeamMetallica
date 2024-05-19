@@ -66,7 +66,87 @@ Mastering control structures is essential for implementing logic and creating fl
 
 ## <p align = "center"> Exception Handling and Event Handling [Jackson]</p>
 
-## <p align = "center"> Example C++ Code </p>
+## <p align = "center"> Example C++ Prgoram </p>
+```cpp
+            #include <iostream>
+            #include <iostream>
+            #include <cstdlib>
+            #include <stdexcept>
+
+            class ParentClass {
+            public:
+                virtual void Introduction() = 0;
+                virtual void PlayGame() = 0;
+                virtual void GetGuesses() = 0;
+                virtual void CheckGuess(int guess) = 0;
+                virtual void EndGame() = 0;
+            };
+
+
+            class ChildClass : public ParentClass {
+            private:
+                int randomNumber;
+                int guess;
+
+            public:
+                void Introduction() {
+                    std::cout << "Welcome to the game!\n";
+                }
+
+                void PlayGame() {
+                    std::cout << "Let's play a game!\n";
+                    srand((unsigned)time(NULL));
+                    randomNumber = rand() % 100 + 1;
+                    GetGuesses();
+                }
+
+                void GetGuesses() {
+
+                    try {
+                        while (guess != randomNumber) {
+                            std::cout << "Enter a number between 1 and 100: ";
+                            std::cin >> guess;
+
+                            if (!std::cin) {
+                                throw std::runtime_error("Goofball");
+                            }
+                            else if (guess < 1 || guess > 100) {
+                                std::cout << "Invalid guess.";
+                            }
+                            else {
+                                CheckGuess(guess);
+                            }
+                        }
+                    }
+                    catch (std::runtime_error& e) {
+                        std::cout << "Invalid input. Do not enter a string goofball.\n";
+                        std::cin.clear();
+                        std::cin.ignore(10000, '\n');
+                    }
+                }
+
+                void CheckGuess(int guess) {
+                    if (guess == randomNumber) {
+                        EndGame();
+                    }
+                    else {
+                        std::string message = (guess > randomNumber) ? "Guess lower\n" : "Guess higher\n";
+                        std::cout << message;
+                    }
+                }
+
+                void EndGame() {
+                    std::cout << "Congratulations! You guessed the number!\n";
+                }
+            };
+            int main()
+            {
+                ChildClass child;
+                child.Introduction();
+                child.PlayGame();
+            }
+```
+
 
 
 
