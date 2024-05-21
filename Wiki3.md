@@ -71,7 +71,7 @@ Mastering control structures is essential for implementing logic and creating fl
 
 ## <div align = "center"> Subprograms [Jackson] </div>
 
-&nbsp; &nbsp; &nbsp; &nbsp; Subprograms are a key component of C++, and allow for repeating code blocks, abstracting functions, and improving the readability of the code.
+&nbsp; &nbsp; &nbsp; &nbsp; Subprograms are a key component of C++, and allow for repeating code blocks, abstracting functions, and improving the readability of the code. When code blocks are put into a subprogram, it allows the program to reuse the code block multiple times and with different parameters. When you put code blocks into subprograms, it allows you to abstract tasks that need to be performed, which makes it so those using the subprogram don’t have to understand the logic inside the subprogram. This consequently makes the program more readable by reducing redundancy and encapsulating different tasks. We will now go over the different properties of subprograms in C++.
 
 ### <div align = "center"> Procedures </div>
 
@@ -152,7 +152,7 @@ C++ can contain objects that are static, stack dynamic, and heap dynamic. Howeve
 
 ## <p align = "center"> Exception Handling and Event Handling [Jackson]</p>
 
-&nbsp; &nbsp; &nbsp; &nbsp;Exception handling in C++ is done using a try catch block. Exception handling is useful for handling unexpected problems that arise when executing a program. In the try block, you put the code you wish to execute and a throw statement if the code produces an unexpected output. In the catch block, you put the code that handles the exception specified in the throw statement.
+&nbsp; &nbsp; &nbsp; &nbsp;Exception handling in C++ is done using a try catch block. Exception handling is useful for handling unexpected problems that arise when executing a program. In the try block, you put the code you wish to execute and a throw statement if the code produces an unexpected output. In the catch block, you put the code that handles the exception specified in the throw statement. This can be useful for terminating a program if something goes wrong, and can help give a detailed error message to let the user know what went wrong.
 ```cpp
             try {    	 
                 // Code that might throw an exception
