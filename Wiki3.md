@@ -1,6 +1,5 @@
 # <div align ="center"> Wiki 3: C++ Deep Dive</br> <span style="font-size:0.5em;"> Written By: Jackson Kettel, Ken Cage, Kelvin Rajbhandari, Tamara Slone </span> </div>
 
-## <div align = "center"> Introduction </div>
 
 ## <div align = "center"> Data Types [Kelvin] </div>
 &nbsp; &nbsp; &nbsp; &nbsp; Data types in C++, like in any other programming language, are essential for defining the kind of data that variables can store and manipulate. They specify the amount of memory to allocate for a variable and the operations that is allowed on the data. C++ includes several built-in types, categorized mainly into primitive and derived types.
