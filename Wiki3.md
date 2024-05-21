@@ -42,6 +42,59 @@ Mastering control structures is essential for implementing logic and creating fl
 
 ## <div align = "center"> Subprograms [Jackson] </div>
 
+&nbsp; &nbsp; &nbsp; &nbsp; Subprograms are a key component of C++, and allow for repeating code blocks, abstracting functions, and improving the readability of the code.
+
+### <div align = "center"> Procedures </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp;Procedures in C++ allow you to execute a block of code, but not have the subprogram return anything. In order to make a procedure, you must begin your method declaration with the void keyword as shown below. This indicates that the subprogram will not return any value when it finishes executing. 
+```cpp
+             void myProcedure() {
+	            // Code
+            }
+```
+### <div align = "center"> Functions </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp;Functions in C++ allow you to return a function after executing the code in a subprogram. This can be very useful for delegating a task to a function, and then having that function return something. In order to make a function, replace the void in a procedure with the return type and include a return call at the end of execution. The below code shows a function that will return the Integer 1 when called.
+```cpp
+             int myFunction() {
+	            //Code
+	            return 1;
+            }
+```
+
+### <div align = "center"> Arguments and Parameters </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp;In order to pass values into a subprogram in C++, you can include the value type in the subprogram declaration and when it is called. C++ also offers overloading subprograms, where you can have multiple subprograms with the same name, but different parameters.
+```cpp
+             double multiply(double x, double y) {
+	            return x * y;
+            }
+
+            double multiply(double x, double y, double z) {
+                return x * y * z;
+            }
+
+            int main() {
+                double product1 = multiply(5.5, 8.5);
+                double product2 = multiply(4.5, 7.5, 9.5);
+            }
+```
+
+### <div align = "center"> Declaration </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp;If you want to call a method in C++, you must define it before calling it. In C++, you may define a subprogram before you provide the definition of that subprogram. This is useful because if you wish to put the definition of a function below another for readability, then you only need to declare the function before as shown below.
+```cpp
+             int myFuction();
+
+            int main() {
+                int number = myFunction();
+            }
+
+            int myFunction() {
+                    return 5;
+            }
+```
+
 ## <div align = "center"> Abstract Data Types and Encapsulation Concepts [Tamara] </div>
 ### <div align = "center"> Abstract Data Types
 &nbsp; &nbsp; &nbsp; &nbsp; C++ excels at defining custom data structures through its support for classes, allowing developers to create clear interfaces and hidden implementations for their data.  For programmers to create these clear interfaces by using abstract data types and encapsulation. Abstract Data Types (ADT’s) are data types that represent a concept rather than an object. C++ supports the creation of abstract data types by using a function known as pure virtual function. Pure virtual functions are functions that must be overridden within a new class called a derived class.  In C++ a program can implement multiple virtual functions depending on what the programmer needs. However, pure virtual functions must always be overridden within the derived class and the class that contains these functions cannot be created into objects rather its purpose is to be called within the derived class.
@@ -69,6 +122,17 @@ C++ can contain objects that are static, stack dynamic, and heap dynamic. Howeve
         }
 
 ## <p align = "center"> Exception Handling and Event Handling [Jackson]</p>
+
+&nbsp; &nbsp; &nbsp; &nbsp;Exception handling in C++ is done using a try catch block. Exception handling is useful for handling unexpected problems that arise when executing a program. In the try block, you put the code you wish to execute and a throw statement if the code produces an unexpected output. In the catch block, you put the code that handles the exception specified in the throw statement.
+```cpp
+            try {    	 
+                // Code that might throw an exception
+                throw ExceptionType("Error message");
+            }
+            catch( ExceptionName e1 )  {   
+                // code to handle exception
+            }
+```
 
 ## <p align = "center"> Example C++ Prgoram </p>
 ```cpp
