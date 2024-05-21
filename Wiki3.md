@@ -18,7 +18,36 @@ Understanding C++ data types is crucial for efficient memory usage and error-fre
 
 ## <div align = "center"> Expressions [Ken] </div>
 
+&nbsp; &nbsp; &nbsp; &nbsp; C++ expressions are a fundamental aspect of the C++ programming language, representing the combination of variables, operators, and function calls to produce a value. Expressions are the building blocks of any C++ program, enabling developers to perform computations, assign values, and control the flow of the program. There are various types of expressions in C++, including arithmetic, logical, relational, and assignment expressions, each serving a distinct purpose in the language's syntax and functionality.
+
+### <div align = "center"> Arithmetic Expressions </div>
+
+Arithmetic expressions in C++ involve operators like addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`). These expressions are used to perform mathematical operations on variables and constants. For example, an arithmetic expression like `int result = a + b * c;` computes the product of `b` and `c`, and then adds `a` to the result. The order of operations in C++ follows the standard mathematical precedence, ensuring that expressions are evaluated correctly.
+
+### <div align = "center"> Logical Expressions </div>
+
+Logical expressions, on the other hand, involve logical operators such as `&&` (logical AND), `||` (logical OR), and `!` (logical NOT). These expressions are crucial for decision-making in C++ programs, as they evaluate to either true or false. For instance, the expression `(a > b) && (c < d)` will be true only if both conditions `a > b` and `c < d` are true. Logical expressions are commonly used in control structures like `if` statements and loops to determine the flow of execution based on specific conditions.
+
+### <div align = "center"> Relational Expressions </div>
+
+Relational expressions compare the values of two operands using relational operators like `==` (equal to), `!=` (not equal to), `<` (less than), `>` (greater than), `<=` (less than or equal to), and `>=` (greater than or equal to). These expressions are essential for evaluating conditions and making decisions within a program. For example, the expression `if (a == b)` checks if the value of `a` is equal to `b`, and if so, executes the corresponding block of code. Relational expressions are integral to the logical flow and control structures in C++.
+
+### <div align = "center"> Assignment Expressions </div>
+
+Assignment expressions are used to assign values to variables. The most basic assignment operator is `=`, but C++ also provides compound assignment operators like `+=`, `-=`, `*=`, and `/=`. An assignment expression not only assigns a value but also returns that value, making it possible to use assignment expressions in more complex expressions. For example, `a = b = 5;` assigns the value 5 to both `a` and `b`. Understanding these various types of expressions is crucial for writing efficient and effective C++ code.
+
 ## <div align = "center"> Assignment Statements [Ken] </div>
+
+&nbsp; &nbsp; &nbsp; &nbsp; C++ assignment statements, closely related to expressions, are fundamental components of the language, allowing developers to set or update the value of variables. While expressions in C++ form the foundation for computations and control flow, assignment statements specifically handle the task of storing values in variables. The simplest form of an assignment statement uses the `=` operator to assign a value to a variable, such as `int a = 5;`. This statement assigns the integer value 5 to the variable `a`. Assignment statements are essential for initializing variables, updating their values, and managing the state of a program.
+
+In addition to the basic assignment operator, C++ offers several compound assignment operators that combine arithmetic or bitwise operations with assignment. These include `+=`, `-=`, `*=`, `/=`, and `%=`, among others. For example, the statement `a += 5;` is equivalent to `a = a + 5;`, adding 5 to the current value of `a` and then storing the result back in `a`. These operators provide a concise and efficient way to perform common arithmetic operations while updating the value of a variable.
+
+C++ also supports assignment statements involving multiple variables. A chained assignment allows a single value to be assigned to multiple variables simultaneously. For instance, `int a, b, c; a = b = c = 10;` assigns the value 10 to all three variables `a`, `b`, and `c`. This feature is particularly useful for initializing multiple variables to the same value in a single statement, improving code readability and reducing redundancy.
+
+Another important aspect of C++ assignment statements is the use of the copy assignment operator and the move assignment operator. The copy assignment operator (`=`) is used to copy the value from one object to another of the same type, while the move assignment operator (`=` with `std::move`) transfers ownership of resources from one object to another. These operators are crucial for managing dynamic memory and resource management in C++, especially when dealing with complex data structures like classes and objects.
+
+These statements not only allow developers to manage the values of variables but also enable more complex operations and optimizations. Mastery of assignment operators and their nuances ensures that a programmer can write concise, efficient, and maintainable code.
+
 
 ## <div align = "center"> Statement-Level Control Structures [Kelvin] </div>
 
