@@ -1,6 +1,5 @@
 # <div align ="center"> Wiki 3: C++ Deep Dive</br> <span style="font-size:0.5em;"> Written By: Jackson Kettel, Ken Cage, Kelvin Rajbhandari, Tamara Slone </span> </div>
 
-
 ## <div align = "center"> Data Types [Kelvin] </div>
 &nbsp; &nbsp; &nbsp; &nbsp; Data types in C++, like in any other programming language, are essential for defining the kind of data that variables can store and manipulate. They specify the amount of memory to allocate for a variable and the operations that is allowed on the data. C++ includes several built-in types, categorized mainly into primitive and derived types.
 
@@ -183,12 +182,13 @@ C++ can contain objects that are static, stack dynamic, and heap dynamic. Howeve
 
 ### <div align = "center"> Inheritance  </div>
 &nbsp; &nbsp; &nbsp; &nbsp; Since C++ is based around OOP, it allows for the use of inheritance to define relationships between classes. Inheritance is a fundamental structure within OOP that allows a newly created class (known as a derived class.) to inherit attributes and methods from an already existing class (known as a base class). Meaning that the derived class can reuse code from the base class, which reduces the redundancy and reusability of previous code. C++ classes can either be stand-alone without the need for inheritance or can have multiple references to base classes using multiple inheritance. However, C++ objects must be initialized before they are used, meaning that all C++ classes must include a constructor method that initializes all data fields. These constructor methods must be called when initiating an object within a base class or superclass.
-    
+
+```cpp
         Example of C++ Inheritance:
             drieved_class(subclass parameters) : public base_class(superclass parameters){
             // Code for subclass is listed here that can call for methods within the base class.
         }
-
+```
 ## <p align = "center"> Exception Handling and Event Handling [Jackson]</p>
 
 &nbsp; &nbsp; &nbsp; &nbsp;Exception handling in C++ is done using a try catch block. Exception handling is useful for handling unexpected problems that arise when executing a program. In the try block, you put the code you wish to execute and a throw statement if the code produces an unexpected output. In the catch block, you put the code that handles the exception specified in the throw statement. This can be useful for terminating a program if something goes wrong, and can help give a detailed error message to let the user know what went wrong.
