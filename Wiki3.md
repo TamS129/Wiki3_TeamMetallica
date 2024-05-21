@@ -47,15 +47,15 @@ Mastering control structures is essential for implementing logic and creating fl
 ### <div align = "center"> Procedures </div>
 
 &nbsp; &nbsp; &nbsp; &nbsp;Procedures in C++ allow you to execute a block of code, but not have the subprogram return anything. In order to make a procedure, you must begin your method declaration with the void keyword as shown below. This indicates that the subprogram will not return any value when it finishes executing. 
-'''cpp
+```cpp
              void myProcedure() {
 	            // Code
             }
-'''
+```
 ### <div align = "center"> Functions </div>
 
 &nbsp; &nbsp; &nbsp; &nbsp;Functions in C++ allow you to return a function after executing the code in a subprogram. This can be very useful for delegating a task to a function, and then having that function return something. In order to make a function, replace the void in a procedure with the return type and include a return call at the end of execution. The below code shows a function that will return the Integer 1 when called.
-'''cpp
+```cpp
              int myFunction() {
 	            //Code
 	            return 1;
@@ -65,7 +65,7 @@ Mastering control structures is essential for implementing logic and creating fl
 ### <div align = "center"> Arguments and Parameters </div>
 
 &nbsp; &nbsp; &nbsp; &nbsp;In order to pass values into a subprogram in C++, you can include the value type in the subprogram declaration and when it is called. C++ also offers overloading subprograms, where you can have multiple subprograms with the same name, but different parameters.
-'''cpp
+```cpp
              double multiply(double x, double y) {
 	            return x * y;
             }
@@ -83,7 +83,7 @@ Mastering control structures is essential for implementing logic and creating fl
 ### <div align = "center"> Declaration </div>
 
 &nbsp; &nbsp; &nbsp; &nbsp;If you want to call a method in C++, you must define it before calling it. In C++, you may define a subprogram before you provide the definition of that subprogram. This is useful because if you wish to put the definition of a function below another for readability, then you only need to declare the function before as shown below.
-'''cpp
+```cpp
              int myFuction();
 
             int main() {
